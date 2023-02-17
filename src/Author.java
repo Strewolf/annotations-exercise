@@ -12,9 +12,7 @@ public class Author extends Person {
         books = new ArrayList();
     }
 
-    /**
-     * @deprecated Use publishedBooks instead
-     */
+
     @Deprecated
     public List<String> getBooks() {
         return books;
@@ -29,7 +27,7 @@ public class Author extends Person {
     }
 
     @Override
-    public String sortName() {
+    public String fullName() {
         return String.format("%s, %s", lastName, firstName);
     }
 }
